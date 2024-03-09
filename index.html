@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+
+<body>
+  <!-- <img src="assets/images/bg.jpg" alt="background image"/> -->
+
+  <div id="container">
+    <div class="mid-container">
+      <span class="label">DAY</span>
+      <Span class="label">MONTH</Span>
+      <Span class="label">YEAR</Span>
+    </div>
+    <div class="mid-container">
+
+      <span>
+        <input type="text" class="fname" id="day" placeholder="DD">
+      </span>
+
+      <span>
+        <input type="text" class="fname" id="month" placeholder="MM">
+      </span>
+
+      <span>
+        <input type="text" class="fname" id="year" placeholder="YYYY">
+      </span>
+    </div>
+
+    <div>
+      <div class="outer-circle">
+        <hr>
+        <div id="circle" onclick="calculateAge()">
+
+          <img id="icon-arrow" src="assets/images/icon-arrow.svg" alt="image">
+        </div>
+      </div>
+      <div id="results">
+        <div> <span id="years" class="first-span">--</span> years</div>
+        <div><span id="months" class="first-span">--</span> months</div>
+        <div><span id="days" class="first-span">--</span> days</div>
+
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
