@@ -10,12 +10,13 @@ function calculateAge(date) {
   const diff = Math.abs(now - birthDate);
  
   const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
- 
+ const currentMonth = now.getMonth() + 1
+ console.log(currentMonth)
 
-  const months = Math.floor(diff / (1000 * 60 * 60 * 24 * 30));
+  const months = Math.abs(currentMonth - month);
 
-
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+const currentDay = now.getDay() + 1
+  const days = Math.abs(currentDay - day);
 
   document.getElementById("days").innerHTML = days;
   document.getElementById("months").innerHTML = months;
